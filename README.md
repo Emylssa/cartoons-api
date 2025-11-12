@@ -14,4 +14,3 @@ Projeto estático que consome a API do Rick and Morty e gera cards dinamicamente
 
 ## Observações
 - A API é pública e não requer token.
-- Caso precise publicar no GitHub Pages, basta enviar estes arquivos ao repositório.
