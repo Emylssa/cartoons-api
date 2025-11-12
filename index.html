@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cartoons 90s & 2000s - Personagens</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Desenhos dos anos 90/2000</h1>
+    <p class="subtitle">Personagens populares — dados em tempo real via API</p>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="search" type="search" placeholder="Pesquisar personagem..." />
+      <select id="statusFilter">
+        <option value="all">Todos os status</option>
+        <option value="Alive">Vivo</option>
+        <option value="Dead">Morto</option>
+        <option value="unknown">Desconhecido</option>
+      </select>
+      <button id="loadMore">Carregar mais</button>
+    </section>
+
+    <section id="cards" class="cards-grid" aria-live="polite">
+      <!-- Cards gerados dinamicamente aqui -->
+    </section>
+
+    <div id="loading" class="loading">Carregando personagens...</div>
+    <div id="error" class="error" hidden></div>
+  </main>
+
+  <footer class="site-footer">
+    <small>Projeto By: Emily Lessa — consumo de API (Rick and Morty)</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
